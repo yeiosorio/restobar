@@ -9,7 +9,7 @@ import { ToastModule } from 'primeng/toast';
 import { ToolbarModule } from 'primeng/toolbar';
 import { RippleModule } from 'primeng/ripple';
 import { StyleClassModule } from 'primeng/styleclass';
-
+import { MegaMenuModule } from 'primeng/megamenu';
 @NgModule({
   exports: [
     FileUploadModule,
@@ -21,7 +21,8 @@ import { StyleClassModule } from 'primeng/styleclass';
     ToastModule,
     ToolbarModule,
     RippleModule,
-    StyleClassModule
+    StyleClassModule,
+    MegaMenuModule
   ]
 })
 export class PrimeNgModule { } 

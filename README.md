@@ -54,6 +54,7 @@ La documentación detallada de la API está disponible en:
 
 ## Tecnologías Utilizadas
 
+- se agrego test unitarios en el front
 - Angular 18 lo decidi en esta veresion para asegurar temas de compatiblidad al ser muy nueva la veresion 19
 - PrimeNG decidi usarlo ya que lo he usado recientemente y es muy recomendable para angular
 - Firebase (Storage + Firestore, y alojamiento) decidi esta nube ya que es mas agil para cosas pequeñas y en la que mas tengo experiencia como Frontend
