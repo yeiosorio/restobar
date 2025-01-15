@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { PrimeNgModule } from './shared/primeng.module';
 import { MenuComponent } from './components/menu/menu.component';
 
@@ -10,8 +10,6 @@ import { MenuComponent } from './components/menu/menu.component';
   imports: [
     CommonModule,
     RouterOutlet,
-    RouterLink,
-    RouterLinkActive,
     PrimeNgModule,
     MenuComponent
   ],

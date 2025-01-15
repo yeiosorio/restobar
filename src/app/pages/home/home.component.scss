@@ -16,8 +16,8 @@
   .custom-upload {
     width: 100%;
     max-width: 400px;
-    .p-fileupload .p-fileupload-advanced {
-      border: none;
+    .p-fileupload .p-fileupload-advanced .p-component {
+      border: none !important;
     }
     .p-fileupload-content {
       display: flex;
