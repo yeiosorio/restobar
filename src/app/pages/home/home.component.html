@@ -1,0 +1,53 @@
+<div class="container">
+  <p-toast></p-toast>
+  <p-card>
+    <p-toolbar>
+      <div class="p-toolbar-group-start">
+        <h2>Subir Imagen</h2>
+      </div>
+    </p-toolbar>
+    
+    <div class="upload-container">
+      <p-fileUpload
+        #fileUpload
+        [showUploadButton]="false"
+        [showCancelButton]="false"
+        [multiple]="false"
+        [customUpload]="true"
+        accept="image/jpeg"
+        [maxFileSize]="1000000"
+        (onSelect)="onFileSelect($event)"
+        [styleClass]="'custom-upload'"
+        chooseLabel=" "
+        invalidFileSizeMessageSummary="Tamaño de archivo inválido"
+        invalidFileSizeMessageDetail="El tamaño máximo permitido es 1MB"
+        invalidFileTypeMessageSummary="Tipo de archivo inválido"
+        invalidFileTypeMessageDetail="Solo se permiten archivos JPG/JPEG">
+        <ng-template pTemplate="content">
+          <div class="upload-content" (click)="fileUpload.choose()">
+            <i class="pi pi-cloud-upload upload-icon"></i>
+            <div class="upload-text">
+              <span *ngIf="!selectedFile">Haga clic para seleccionar una imagen</span>
+              <span *ngIf="selectedFile">{{selectedFile.name}}</span>
+            </div>
+          </div>
+        </ng-template>
+      </p-fileUpload>
+
+      <div *ngIf="selectedFile" class="upload-actions">
+        <p-button 
+          icon="pi pi-upload" 
+          label="Subir Imagen"
+          severity="success"
+          [loading]="uploading"
+          (onClick)="uploadImage()">
+        </p-button>
+        <p-button 
+          icon="pi pi-times" 
+          severity="danger"
+          (onClick)="clearSelection(fileUpload)">
+        </p-button>
+      </div>
+    </div>
+  </p-card>
+</div> 

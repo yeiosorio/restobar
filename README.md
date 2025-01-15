@@ -1,27 +1,62 @@
-# Restobar
+# RestoBar
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.0.
+Aplicación web para el procesamiento y gestión de imágenes con estadísticas de uso.
 
-## Development server
+## Caracteristicas Principales
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Subida de Imágenes
+- Carga de imágenes en formato JPG/JPEG
+- Conversión automática a PNG
+- Almacenamiento en Firebase Storage
+  DataSet en Firestore
+- Límite de tamaño: 1MB por imagen
+- Vista previa antes de subir
 
-## Code scaffolding
+### Estadísticas y Visualización
+- Visualización de imágenes por rango de fechas
+- Estadísticas de carga por hora
+- Tabla de imagenes subidas con ordenamiento
+- Gráfico de barras para ver imagenes subidas agrupadas por hora
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Guía de Uso
 
-## Build
+1. **Subir Imagen**
+   - Acceder a la página principal
+   - Hacer clic en el área de carga o arrastrar una imagen
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+2. **Ver Estadísticas**
+   - Ir a la sección "Estadísticas"
+   - Seleccionar un rango de fechas (se visualizaran las imagenes subidas en ese rango)
 
-## Running unit tests
+## Requisitos para emular el proyecto
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Node.js >= 18.x
+- Angular CLI 18.2.0
 
-## Running end-to-end tests
+## Configuración del Proyecto
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+# Instalar dependencias
+npm install
 
-## Further help
+# Servidor de desarrollo
+ng serve
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+# Construir para producción
+ng build
+```
+
+## API Backend
+
+La documentación detallada de la API está disponible en:
+- Desarrollo: http://localhost:3000/api-docs
+- Producción: https://restobar-33413.web.app/api-docs
+
+## Tecnologías Utilizadas
+
+- Angular 18 lo decidi en esta veresion para asegurar temas de compatiblidad al ser muy nueva la veresion 19
+- PrimeNG decidi usarlo ya que lo he usado recientemente y es muy recomendable para angular
+- Firebase (Storage + Firestore, y alojamiento) decidi esta nube ya que es mas agil para cosas pequeñas y en la que mas tengo experiencia como Frontend
+- Node.js + Express
+- Sharp (procesamiento de imágenes)
+
