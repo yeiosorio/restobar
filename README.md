@@ -50,14 +50,14 @@ ng build
 
 La documentación detallada de la API está disponible en:
 - Desarrollo: http://localhost:3000/api-docs
-- Producción: https://restobar-33413.web.app/api-docs
+- Producción: https://restobar-api.onrender.com/api-docs/
 
 ## Tecnologías Utilizadas
 
 - se agrego test unitarios en el front
-- Angular 18 lo decidi en esta veresion para asegurar temas de compatiblidad al ser muy nueva la veresion 19
-- PrimeNG decidi usarlo ya que lo he usado recientemente y es muy recomendable para angular
-- Firebase (Storage + Firestore, y alojamiento) decidi esta nube ya que es mas agil para cosas pequeñas y en la que mas tengo experiencia como Frontend
+- Angular 18 esta en esta veresion para asegurar temas de compatiblidad al ser muy nueva la veresion 19
+- PrimeNG es muy recomendable para angular
+- Firebase (Storage + Firestore, y alojamiento) esta nube es muy agil para cosas pequeñas y en la que mas tengo experiencia
 - Node.js + Express
 - Sharp (procesamiento de imágenes)
 
